@@ -1,7 +1,11 @@
-function Header(props){
-    return(
+import './Header.css';
+import Navbar from '../Navbar/Navbar';
+
+function Header(props) {
+    return (
         <>
-        <h1>Home Page</h1>
+            <h1>Home Page</h1>
+            <Navbar/>
         </>
     )
 }

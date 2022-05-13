@@ -1,3 +1,4 @@
+import './Tours.css';
 const jsonData = require('../../data/db.json')
 
 function Tours(props) {
@@ -6,11 +7,10 @@ function Tours(props) {
             {jsonData.map(item => {
                 return (
                     <>
-                        <div>
+                        <div className='card'>
                             <p>{item.name}</p>
                             <img src={item.image} alt={item.name} />
                         </div>
-                        <hr />
                     </>
                 )
             })}

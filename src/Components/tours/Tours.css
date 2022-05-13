@@ -1,0 +1,17 @@
+.card{
+    width: 80%;
+    /* max-height: 10rem; */
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: gray;
+    border-radius: 15%;
+  }
+  .card img{
+    width: 100%;
+    max-height: 15rem;
+    /* border-radius: 50%; */
+  }
+  .card p{
+    font-weight: 700;
+  }

@@ -2,12 +2,16 @@ import Footer from "../footer/Footer";
 import Header from "../header/Header";
 import Tours from "../tours/Tours";
 
-function Home(props){
-    return(
+import './Home.css';
+
+function Home(props) {
+    return (
         <>
-        <Header/>
-        <Tours/>
-        <Footer/>
+            <Header />
+            <div className="cardsContainer">
+                <Tours />
+            </div>
+            <Footer />
         </>
     )
 }

@@ -1,0 +1,12 @@
+#ulF {
+    padding-top: 20px;
+}
+
+li {
+    display: inline;
+}
+
+#liURL{
+    float: right;
+    padding-right: 2rem;
+}

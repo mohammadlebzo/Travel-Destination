@@ -1,7 +1,7 @@
 import './Tours.css';
 import Tour from './tour/Tour';
 import jsonData from '../../data/db.json';
-
+import { Link } from "react-router-dom";
 
 function Tours(props) {
     return (
@@ -9,7 +9,9 @@ function Tours(props) {
             {jsonData.map(item => {
                 return (
                     <>
-                        <Tour image={item.image} name={item.name} />
+                        <Link to={`/city/${item.id}`} key={item.id}>
+                            <Tour image={item.image} name={item.name} />
+                        </Link>
                     </>
                 )
             })}
